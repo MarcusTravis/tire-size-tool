@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How tire size math works – Tire Size Tool</title>
+<meta name="description" content="The formulas behind tire diameter, sidewall height, circumference, revolutions per mile and speedometer error, with a worked example.">
+<link rel="canonical" href="https://tire-size-tool.pages.dev/how-it-works">
+<meta property="og:title" content="How tire size math works – Tire Size Tool">
+<meta property="og:description" content="The formulas behind tire diameter, sidewall height, circumference, revolutions per mile and speedometer error, with a worked example.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tire-size-tool.pages.dev/how-it-works">
+<meta name="theme-color" content="#b45309">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap"><a class="brand" href="/">Tire Size Tool</a><nav aria-label="Main"><a href="/">Compare</a><a href="/how-it-works" aria-current="page">How it works</a><a href="/privacy">Privacy</a></nav></div></header>
+<main id="main" class="wrap">
+<article class="card prose">
+<h1>How the math works</h1>
+<p>Everything on this site comes from a few textbook formulas. Nothing is looked up from a manufacturer database, so real tires can differ slightly from these numbers: measured diameter depends on the brand, tread depth, rim width and inflation.</p>
+<h2>Reading a metric size</h2>
+<p>In <code>LT265/70R17</code>, <code>LT</code> means light truck (a <code>P</code> means passenger; no letter is common too), <code>265</code> is the section width in millimetres, <code>70</code> is the aspect ratio (sidewall height as a percentage of width), <code>R</code> means radial construction, and <code>17</code> is the rim diameter in inches. Load and speed ratings after the size (like <code>121/118S</code>) do not change the dimensions and are ignored.</p>
+<h2>The formulas</h2>
+<ul>
+<li><strong>Sidewall height</strong> = width × aspect ÷ 100</li>
+<li><strong>Overall diameter</strong> = rim × 25.4 + 2 × sidewall (in mm)</li>
+<li><strong>Circumference</strong> = π × diameter</li>
+<li><strong>Revolutions per mile</strong> = 63,360 ÷ (π × diameter in inches). There are 63,360 inches in a mile.</li>
+<li><strong>Actual speed</strong> = speedometer reading × new diameter ÷ old diameter</li>
+</ul>
+<h2>Worked example: 265/70R17</h2>
+<p>Sidewall = 265 × 70 ÷ 100 = <strong>185.5 mm</strong> (7.30 in).<br>
+Diameter = 17 × 25.4 + 2 × 185.5 = 431.8 + 371 = <strong>802.8 mm</strong>, or 31.61 in.<br>
+Revolutions per mile = 63,360 ÷ (π × 31.61) ≈ <strong>638</strong>.</p>
+<h2>Flotation sizes</h2>
+<p>A flotation size like <code>33x12.50R17</code> states the overall diameter (33 in), section width (12.5 in) and rim (17 in) directly. The sidewall is (33 − 17) ÷ 2 = 8 in. The same 33 in tire on a 15 in rim has a 9 in sidewall. To convert to metric, the width is multiplied by 25.4 and the sidewall divided by the width gives the aspect ratio, which is then rounded to the nearest standard metric step.</p>
+<h2>Speedometer error</h2>
+<p>A speedometer counts wheel revolutions. A taller tire covers more ground per revolution, so the car is moving faster than the gauge shows; a shorter tire does the opposite. The difference is proportional: a tire 3% taller means you are going 3% faster than indicated, and the odometer under-counts by the same 3%.</p>
+<h2>Things the math cannot tell you</h2>
+<p>Whether a size fits your vehicle depends on wheel offset, suspension, load rating and more. Use these numbers as a starting point and confirm fitment with the tire maker or a tire shop.</p>
+</article>
+</main>
+<footer class="site"><div class="wrap"><p>Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" rel="noopener">buy me a coffee →</a></p></div></footer>
+</body>
+</html>
