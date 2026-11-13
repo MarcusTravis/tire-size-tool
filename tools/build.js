@@ -6,7 +6,7 @@ const path = require('path');
 const T = require('../js/tire.js');
 const R = require('../js/render.js');
 
-const BASE_URL = 'https://tire-size-tool.pages.dev';
+const BASE_URL = 'https://tiresizing.pages.dev';
 const SITE = 'Tire Size Tool';
 // Cloudflare Web Analytics (cookieless). Leave empty to omit the beacon.
 const CF_BEACON_TOKEN = process.env.CF_BEACON_TOKEN || fs.readFileSync(path.join(__dirname, 'beacon-token.txt'), 'utf8').trim();
