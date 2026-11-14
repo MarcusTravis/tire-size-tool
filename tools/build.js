@@ -37,6 +37,7 @@ function page({ file, urlPath, title, description, body, scripts = '', current =
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="DBsd4dRo6CszvxQNH2xXlYTnwq2I4v30uIsV_nwwEc8">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 ${urlPath ? `<link rel="canonical" href="${BASE_URL}${urlPath}">` : '<meta name="robots" content="noindex">'}
