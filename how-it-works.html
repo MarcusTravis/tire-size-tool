@@ -4,23 +4,34 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="DBsd4dRo6CszvxQNH2xXlYTnwq2I4v30uIsV_nwwEc8">
-<title>How tire size math works – Tire Size Tool</title>
-<meta name="description" content="The formulas behind tire diameter, sidewall height, circumference, revolutions per mile and speedometer error, with a worked example.">
+<title>How to Calculate Tire Diameter &amp; Revs per Mile</title>
+<meta name="description" content="The formulas behind tire diameter, sidewall height, circumference, revolutions per mile and speedometer error, with a worked 265/70R17 example.">
 <link rel="canonical" href="https://tiresizing.pages.dev/how-it-works">
-<meta property="og:title" content="How tire size math works – Tire Size Tool">
-<meta property="og:description" content="The formulas behind tire diameter, sidewall height, circumference, revolutions per mile and speedometer error, with a worked example.">
+<meta property="og:title" content="How to Calculate Tire Diameter &amp; Revs per Mile">
+<meta property="og:description" content="The formulas behind tire diameter, sidewall height, circumference, revolutions per mile and speedometer error, with a worked 265/70R17 example.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Tire Size Tool">
+<meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://tiresizing.pages.dev/how-it-works">
+<meta property="og:image" content="https://tiresizing.pages.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tire Size Calculator: compare two sizes, diameter, revs per mile and speedometer error">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Calculate Tire Diameter &amp; Revs per Mile">
+<meta name="twitter:description" content="The formulas behind tire diameter, sidewall height, circumference, revolutions per mile and speedometer error, with a worked 265/70R17 example.">
+<meta name="twitter:image" content="https://tiresizing.pages.dev/og.png">
 <meta name="theme-color" content="#b45309">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tiresizing.pages.dev/"},{"@type":"ListItem","position":2,"name":"How it works","item":"https://tiresizing.pages.dev/how-it-works"}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap"><a class="brand" href="/">Tire Size Tool</a><nav aria-label="Main"><a href="/">Compare</a><a href="/how-it-works" aria-current="page">How it works</a><a href="/privacy">Privacy</a></nav></div></header>
 <main id="main" class="wrap">
-<article class="card prose">
-<h1>How the math works</h1>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <span aria-current="page">How it works</span></nav><article class="card prose">
+<h1>How tire size math works</h1>
 <p>Everything on this site comes from a few textbook formulas. Nothing is looked up from a manufacturer database, so real tires can differ slightly from these numbers: measured diameter depends on the brand, tread depth, rim width and inflation.</p>
 <h2>Reading a metric size</h2>
 <p>In <code>LT265/70R17</code>, <code>LT</code> means light truck (a <code>P</code> means passenger; no letter is common too), <code>265</code> is the section width in millimetres, <code>70</code> is the aspect ratio (sidewall height as a percentage of width), <code>R</code> means radial construction, and <code>17</code> is the rim diameter in inches. Load and speed ratings after the size (like <code>121/118S</code>) do not change the dimensions and are ignored.</p>
@@ -40,8 +51,13 @@ Revolutions per mile = 63,360 ÷ (π × 31.61) ≈ <strong>638</strong>.</p>
 <p>A flotation size like <code>33x12.50R17</code> states the overall diameter (33 in), section width (12.5 in) and rim (17 in) directly. The sidewall is (33 − 17) ÷ 2 = 8 in. The same 33 in tire on a 15 in rim has a 9 in sidewall. To convert to metric, the width is multiplied by 25.4 and the sidewall divided by the width gives the aspect ratio, which is then rounded to the nearest standard metric step.</p>
 <h2>Speedometer error</h2>
 <p>A speedometer counts wheel revolutions. A taller tire covers more ground per revolution, so the car is moving faster than the gauge shows; a shorter tire does the opposite. The difference is proportional: a tire 3% taller means you are going 3% faster than indicated, and the odometer under-counts by the same 3%.</p>
+<h2>How much size change is safe?</h2>
+<p>A widely used rule of thumb is to stay within about 3% of the original overall diameter. Treat it as general guidance: it keeps speedometer error small and usually avoids rubbing, but some vehicles have room for much more and some for less.</p>
 <h2>Things the math cannot tell you</h2>
 <p>Whether a size fits your vehicle depends on wheel offset, suspension, load rating and more. Use these numbers as a starting point and confirm fitment with the tire maker or a tire shop.</p>
+<h2>Try it</h2>
+<p>Use the <a href="/">tire size calculator</a> with any two sizes, or start from a popular comparison:</p>
+<ul class="pairs"><li><a href="/compare/265-70r17-vs-285-70r17">265/70R17 vs 285/70R17</a></li><li><a href="/compare/275-70r18-vs-285-75r18">275/70R18 vs 285/75R18</a></li><li><a href="/compare/265-70r17-vs-33x12-50r17">265/70R17 vs 33x12.50R17</a></li><li><a href="/compare/245-75r16-vs-265-75r16">245/75R16 vs 265/75R16</a></li><li><a href="/compare/275-65r18-vs-275-70r18">275/65R18 vs 275/70R18</a></li><li><a href="/compare/285-75r16-vs-315-75r16">285/75R16 vs 315/75R16</a></li><li><a href="/compare/265-65r18-vs-275-65r18">265/65R18 vs 275/65R18</a></li><li><a href="/compare/275-60r20-vs-275-65r20">275/60R20 vs 275/65R20</a></li></ul>
 </article>
 </main>
 <footer class="site"><div class="wrap"><p>Free and ad-free. If this site helped you, <a href="https://ko-fi.com/marcustravis" rel="noopener">buy me a coffee →</a></p></div></footer>

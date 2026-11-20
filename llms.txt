@@ -1,0 +1,35 @@
+# Tire Size Tool (tiresizing.pages.dev)
+
+> Free, ad-free tire size calculator: compare two tire sizes (metric like 265/70R17 or flotation like 33x12.50R17) for overall diameter, width, sidewall, circumference, revolutions per mile and speedometer error, and convert between metric and inch sizes. No sign-up, no cookies.
+
+All numbers are calculated from the size with standard formulas (not a manufacturer database), so real tires can differ slightly by brand, rim width and inflation:
+
+- Sidewall height (mm) = section width (mm) × aspect ratio ÷ 100
+- Overall diameter (mm) = rim (in) × 25.4 + 2 × sidewall (mm); ÷ 25.4 for inches
+- Circumference = π × diameter
+- Revolutions per mile = 63,360 ÷ (π × diameter in inches)
+- Actual speed = speedometer reading × new diameter ÷ old diameter
+- Flotation size DxWxR: sidewall (in) = (D − R) ÷ 2; aspect = sidewall ÷ W × 100
+
+A common rule of thumb is to keep a new tire within about 3% of the original diameter; that is general guidance, and fitment should be confirmed for the specific vehicle.
+
+## Main pages
+
+- [Tire size calculator and comparison](https://tiresizing.pages.dev/): interactive two-size comparison with a to-scale drawing, speedometer error table, metric ↔ flotation converter and an FAQ. Shareable links: https://tiresizing.pages.dev/?a=265%2F70R17&b=285%2F70R17
+- [How tire size math works](https://tiresizing.pages.dev/how-it-works): the formulas above with a worked 265/70R17 example, how to read a size, flotation sizes and speedometer error.
+
+## Popular comparisons
+
+- [265/70R17 vs 285/70R17](https://tiresizing.pages.dev/compare/265-70r17-vs-285-70r17): 265/70R17 is 31.61 in tall, 285/70R17 is 32.71 in (+3.5%); 60 mph indicated = 62.1 mph actual.
+- [275/70R18 vs 285/75R18](https://tiresizing.pages.dev/compare/275-70r18-vs-285-75r18): 275/70R18 is 33.16 in tall, 285/75R18 is 34.83 in (+5.0%); 60 mph indicated = 63.0 mph actual.
+- [265/70R17 vs 33x12.50R17](https://tiresizing.pages.dev/compare/265-70r17-vs-33x12-50r17): 265/70R17 is 31.61 in tall, 33x12.50R17 is 33.00 in (+4.4%); 60 mph indicated = 62.6 mph actual.
+- [245/75R16 vs 265/75R16](https://tiresizing.pages.dev/compare/245-75r16-vs-265-75r16): 245/75R16 is 30.47 in tall, 265/75R16 is 31.65 in (+3.9%); 60 mph indicated = 62.3 mph actual.
+- [275/65R18 vs 275/70R18](https://tiresizing.pages.dev/compare/275-65r18-vs-275-70r18): 275/65R18 is 32.07 in tall, 275/70R18 is 33.16 in (+3.4%); 60 mph indicated = 62.0 mph actual.
+- [285/75R16 vs 315/75R16](https://tiresizing.pages.dev/compare/285-75r16-vs-315-75r16): 285/75R16 is 32.83 in tall, 315/75R16 is 34.60 in (+5.4%); 60 mph indicated = 63.2 mph actual.
+- [265/65R18 vs 275/65R18](https://tiresizing.pages.dev/compare/265-65r18-vs-275-65r18): 265/65R18 is 31.56 in tall, 275/65R18 is 32.07 in (+1.6%); 60 mph indicated = 61.0 mph actual.
+- [275/60R20 vs 275/65R20](https://tiresizing.pages.dev/compare/275-60r20-vs-275-65r20): 275/60R20 is 32.99 in tall, 275/65R20 is 34.07 in (+3.3%); 60 mph indicated = 62.0 mph actual.
+
+## Optional
+
+- [Privacy](https://tiresizing.pages.dev/privacy): no accounts, ads or cookies; cookieless Cloudflare Web Analytics page counts.
+- [Source code](https://github.com/MarcusTravis/tire-size-tool): plain HTML/JS, MIT licensed.
